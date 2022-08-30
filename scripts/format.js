@@ -9,12 +9,13 @@ const getPath = function (dir) {
 let intentMap = {
   '2': [6, 7, 8],
   '3': [5, 10, 7],
-  '4': [5, 10, 7]
+  '4': [5, 10, 7],
+  '5': [5, 10, 7]
 }
 
 // build(2)
 // build(3)
-build(4)
+build(5)
 
 function build (version) {
   const datas = fs.readFileSync(getPath(`../v${version}/data.v${version}.txt`), 'utf-8')
